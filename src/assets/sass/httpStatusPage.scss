@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+  background: linear-gradient(to right, aliceblue, beige);
+  font-family: "Inconsolata";
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: [first-row] 5fr [second-row] 1fr;
+  grid-template-columns: [frst-column] 1fr [second-column] 1fr;
+  grid-template-areas: "status-data status-img" "control-buttons control-buttons";
+}
+
+.status-data {
+  width: 70%;
+  padding: 5%;
+  border-radius: 2%;
+  box-shadow: 2px 2px 2px gainsboro;
+  grid-area: status-data;
+  text-align: center;
+  justify-self: end;
+  align-self: center;
+}
+
+.status-data-code {
+  font-size: 5vw;
+  color: #944949;
+}
+
+.horizontal-divider {
+  border-top: 1px solid #ccc;
+}
+
+.status-data-message {
+  font-size: 2vw;
+  color: #ad6d6d;
+  text-align: center;
+}
+
+.status-data-message p {
+  overflow-wrap: break-word;
+}
+
+.status-image {
+  grid-area: status-img;
+  width: 70%;
+  height: 100%;
+  margin-left: 7%;
+  justify-self: start;
+  align-self: center;
+}
+
+.status-image img {
+  height: 80%;
+  margin-top: 10%;
+}
